@@ -1,36 +1,27 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+This repository presents a Next.js 14+ App Router project engineered for high performance and optimal user experience. It serves as an example of a Todo List application and leverages Redux Toolkit Query (RTKQ) as its primary data fetching and caching solution.
 
-## Getting Started
+Key Features:
 
-First, run the development server:
+Next.js 14+ App Router: Modern routing and rendering architecture for React applications.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Redux Toolkit Query (RTKQ): Streamlined data fetching, caching, and state management.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Server-Side Rendering (SSR): Initial page loads are rendered on the server for improved performance and SEO.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Incremental Static Regeneration (ISR): Data is pre-rendered at build time and periodically revalidated on the server, balancing performance with content freshness.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Client-Side Revalidation: RTKQ automatically revalidates and refreshes data on the client when data becomes stale or mutations invalidate cached data (e.g., after adding a new todo).
 
-## Learn More
+Dynamic Pagination: Efficiently fetches and displays data in chunks, with seamless navigation between pages.
 
-To learn more about Next.js, take a look at the following resources:
+SEO Best Practices:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Dynamic robots.txt: Configured to dynamically generate based on environment variables (localhost vs. production).
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Dynamic sitemap.xml: Automatically generated to help search engines discover and index pages.
 
-## Deploy on Vercel
+Pre-rendered content for better search engine visibility.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Modular Code Structure: Organized into clear directories for components, interfaces, lib utilities, and services, promoting maintainability.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+TypeScript: Full type-safety across the application.
