@@ -15,6 +15,10 @@ export function middleware(request: NextRequest) {
   response.headers.set('Referrer-Policy', 'strict-origin-when-cross-origin');
   response.headers.set('Strict-Transport-Security', 'max-age=63072000; includeSubDomains; preload');
 
+  if (process.env.NODE_ENV === 'production') {
+    response.headers.set('X-Robots-Tag', 'index, follow');
+  }
+
   return response;
 }
 
