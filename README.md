@@ -68,9 +68,6 @@ NEXT_PUBLIC_API_BASE_URL=[https://jsonplaceholder.typicode.com](https://jsonplac
 # Base URL for the site itself. Important for sitemap.xml and robots.txt.
 # This will be replaced with your production domain during deployment.
 NEXT_PUBLIC_SITE_URL=http://localhost:3000
-
-# Example of a debugging flag (optional)
-# NEXT_PUBLIC_DEBUG_MODE=true
 ```
 
 ### 4. Run The Development Server 
